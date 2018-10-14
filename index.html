@@ -1,0 +1,121 @@
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color:BROWN;
+    PADDING:10PX;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+#grad1{
+    height: 200px;
+    background-image:url(a.jpg);
+   -webkit-text-stroke: 1px RED;
+   color: YELLOW;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+   }
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 30%;
+    height: 300px; /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
+}
+aside{
+    float: right;
+    width: 30%;
+    height: 300px; /* only for demonstration, should be removed */
+    background: #ccc;
+    PADDING:20PX;
+}
+
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+   display:inline-table;
+    width: 40%;
+    background-color: #f1f1f1;
+    height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article,aside {
+        width: 100%;
+        height: auto;
+    }
+}
+</style>
+<body>
+<div id="grad1">
+ <h2><center><br><br><br><br>ANJALAI AMMAL MAHALINGAM ENGINEERING COLLEGE<br> DEPARTMENT OF COMPUTER SCIENCE </h2>
+</div>
+<header>
+  <h4>SUBJECT_NAME_HERE</h4>
+</header>
+<section>
+  <nav>
+      <div style="text-align:center">NOTES GO HERE<br><br><br><br><br><a href="c.pdf">c programming</a><br>
+      <a href="Java_in_tamil.pdf">java</a></div>
+      
+  </nav>
+  
+  <article>
+   <div style="text-align:center"><BR>QUESTIONS PAPER GOES HERE<br><br><br><br><br><a href="dr-abdul-kalam-aknisiragugal.pdf">DR_ABDUL_KALAM_Aknisiragugal</a><br>
+      <a href="Gandhiji ponmozhikal.pdf">GANDHIJI ponmozhikal</a></div>
+      
+  </article>
+  <aside>
+  <div style="text-align:center">PPT GO HERE<br><br><br><br><br><a href="History in pictures.pdf">History in pictures</a><br>
+      <a href="How to Speak English Fluently in 1 Week.pdf">How to Speak English Fluently in 1 Week</a></div>
+   
+  </aside>
+ 
+</section>
+
+<footer>
+  <p>NOTE HERE ALSO</p>
+</footer>
+
+</body>
+</html>
